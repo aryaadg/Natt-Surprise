@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Natania Ardelia Cahyanii Tersayang ❤️</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Background overlay */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      pointer-events: none;
+    }
+    /* Show the modal */
+    .modal-overlay.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    /* Modal content */
+    .modal-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-pink-100 flex items-center justify-center min-h-screen flex-col">
+
+  <!-- Container utama -->
+  <div class="max-w-lg mx-auto text-center p-8 bg-white rounded-lg shadow-lg">
+    
+    <!-- Header romantis -->
+    <h1 class="text-3xl font-bold text-pink-500 mb-4">For Natania Ardelia Cahyanii Kuu ❤️❤️</h1>
+    <p class="text-gray-700 mb-6">
+    Haii natt ini aryaadg, aku jujur buat ini untuk memperingati hari jadikan kita, maaf yaa kalau aku kadang lupa, maacii yaa udah nemenin aku selama inii. love u natt ❤️❤️❤️  
+    </p>
+
+    <!-- Gambar romantis -->
+    <img src="IMG/1 (1).jpg" alt="Romantic image" class="w-full rounded-lg mb-6">
+
+    <!-- Quotes romantis -->
+    <div class="text-left">
+      <p class="text-xl text-pink-400 font-semibold">"Maaci yaa udah mau sama akuu, Maaf kalo aku kurang ato mungkin tidak sesuai ekspetasimu 😭❤️, But i will do ma best for u janji akuu 💕"</p>
+    </div>
+
+    <!-- Button Kejutan -->
+    <div class="mt-6">
+      <a href="#!" id="revealButton" class="bg-pink-500 text-white font-semibold py-2 px-4 rounded hover:bg-pink-600 transition duration-200">
+        Pencet Natt
+      </a>
+    </div>
+  </div>
+
+  <!-- Modal Overlay and Card -->
+  <div id="modalOverlay" class="modal-overlay">
+    <div class="modal-content">
+      <h3 class="text-2xl font-bold text-pink-500 mb-2">Ciluk baa Rawrrr 😭😭 💖</h3>
+      <p class="text-gray-700 mb-4">
+        Tunggu Aku yaa semua yang aku bilang itu sumpah akuu. btw selamat hari jadi yaa, maaf kalo aku kadang lupa kadang inget, maaaci yaa 💕❤️
+      </p>
+      <div class="mb-4">
+        <img src="IMG/rawr.jpg" alt="Romantic Image" class="rounded-lg shadow-md w-full">
+      </div>
+      <div class="text-center">
+        <a href="#!" id="closeButton" class="bg-pink-500 text-white font-semibold py-2 px-4 rounded-full hover:bg-pink-600 transition duration-200 inline-block">
+          Sayangg Natt ❤️❤️💕💕
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript to toggle the modal visibility
+    const revealButton = document.getElementById("revealButton");
+    const modalOverlay = document.getElementById("modalOverlay");
+    const closeButton = document.getElementById("closeButton");
+
+    revealButton.addEventListener("click", function(event) {
+      event.preventDefault();
+      modalOverlay.classList.add("show");
+    });
+
+    closeButton.addEventListener("click", function(event) {
+      event.preventDefault();
+      modalOverlay.classList.remove("show");
+    });
+  </script>
+
+</body>
+</html>

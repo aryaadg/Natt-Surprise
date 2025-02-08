@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary Surprise</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        /* Animasi fadeIn */
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .photo-grid img:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .highlight {
+            color: #f472b6; /* Warna pink */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="assets/musik.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Section 1: Ucapan -->
+    <div class="section bg-pink-100">
+        <h1 class="text-3xl font-bold mb-4 animate-fadeIn">Happy Anniversary, Natania ku sayangg ❤️💖 </h1>
+        <p class="text-xl animate-fadeIn">
+            Gakerasa udah <span class="highlight">6 bulan</span> kita bareng bebb letsgoo. Maacii yaa udah buat hidupku lebih berwarna.
+            Astungkara Hubungan kita sampai jenjang berikutnya ❤️💕
+            <br><span class="highlight">I Love you natt, Sayang Natt ❤️</span>
+        </p>
+    <button id="openModal" class="px-6 py-3 bg-pink-500 text-white rounded-lg mt-5">Foto Natania</button>
+    </div>
+
+
+<!-- Section 2: Foto-foto Kenangan -->
+<div class="section bg-white px-6 py-10">
+    <h2 class="text-3xl font-bold mb-6 animate-fadeIn text-center">Natania 💖 Aryaadg</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <img src="assets/1.jpg" alt="Photo 1" class="w-full rounded-lg">
+        <img src="assets/2.jpg" alt="Photo 2" class="w-full rounded-lg">
+        <img src="assets/3.jpg" alt="Photo 3" class="w-full rounded-lg">
+        <img src="assets/4.jpg" alt="Photo 4" class="w-full rounded-lg">
+        <img src="assets/5.jpg" alt="Photo 5" class="w-full rounded-lg">
+        <img src="assets/6.jpg" alt="Photo 5" class="w-full rounded-lg">
+    </div>
+</div>
+
+
+<!-- Section 3: Cerita Singkat -->
+<div class="section bg-pink-100 p-6 rounded-lg shadow-lg flex flex-col md:flex-row items-center">
+    <img src="assets/p1.jpg" alt="Kenangan Bersama" class="w-2/3 sm:w-1/2 md:w-1/3 rounded-lg shadow-md mb-4 md:mb-0 md:mr-6">
+    <div class="text-center md:text-left">
+        <h2 class="text-3xl font-bold mb-4 animate-fadeIn">Mett Tanggal 9 Yaa Bebebb 💖</h2>
+        <p class="text-xl animate-fadeIn">
+            Hari ini tepat sudah 6 bulan kita bareng resmi beb pacaran, Suka duka sedih senang udah kita lalui 6 bulan ini
+            jujur mungkin tahun2 awal ini kita baru saling kenal bareng, suka duka bareng, tawa bareng, banyak banget tauu.
+            💕
+        </p>
+    </div>
+</div>
+
+    <!-- Section 4: Kata-kata Penutup -->
+    <div class="section bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row items-center">
+        <img src="assets/p2.jpg" alt="Kenangan Bersama" class="w-2/3 sm:w-1/2 md:w-1/3 rounded-lg shadow-md mb-4 md:mb-0 md:mr-6">
+        <div class="text-center md:text-left">
+            <h2 class="text-3xl font-bold mb-4 animate-fadeIn">Banyak Kata Maaf 💖</h2>
+            <p class="text-xl animate-fadeIn">
+                Maafin OM CABUL ini beb yaa, aku jujur banyak banget salah aku, Tapi. arya selalu imporove koo bebb, belajar dari kesalahan2 kemaren
+                makin dewasa, makin terbuka, bahkan aibku 100% amu udah tau 😭. Maacii yaa sayangg ❤️💖
+            </p>
+        </div>
+    </div>
+
+<!-- Section 3: Cerita Singkat -->
+<div class="section bg-pink-100 p-6 rounded-lg shadow-lg flex flex-col md:flex-row items-center">
+    <img src="assets/p3.jpg" alt="Kenangan Bersama" class="w-2/3 sm:w-1/2 md:w-1/3 rounded-lg shadow-md mb-4 md:mb-0 md:mr-6">
+    <div class="text-center md:text-left">
+        <h2 class="text-3xl font-bold mb-4 animate-fadeIn">Maacii yaa kalau kamu sudah baca sampai bawah sini 💖</h2>
+        <p class="text-xl animate-fadeIn">
+            Jujur ga ada kata2 lain selain terimakasih bebb, kamu itu hadir bagaikan dewi dan takdir yang indah bagi aku tau.
+            astungkara 6 bulan ini jadi 6 abad, sampai generasi2 kita selalu, kalau bole dikasi kesempatan aku mau banget ketemu mu 
+            dikehidupan selanjutnya tau. cuma kamu MADE NATANIA ARDELIA CAHYANII
+            💕
+        </p>
+    </div>
+</div>
+
+    <!-- Section 4: Kata-kata Penutup -->
+    <div class="section bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row items-center">
+        <div class="text-center md:text-left">
+            <h2 class="text-3xl font-bold mb-4 animate-fadeIn">AKU SELALU SUPPORT KAMU NATT 💖</h2>
+            <h2 class="text-3xl font-bold mb-4 animate-fadeIn">-</h2>
+            <h4 class="text-2xl font-bold mb-4 animate-fadeIn">KAMU JANGAN PERNAH MERASA SEPI ARYAADG FANS BERATMU 💖</h4>
+            <h2 class="text-3xl font-bold mb-4 animate-fadeIn">-</h2>
+            <h4 class="text-2xl font-bold mb-4 animate-fadeIn">INGET BEB KALO ADA SESUATU BILANG2 YAA KETUAA 😘💖</h4>
+            <h4 class="text-2xl mb-4 animate-fadeIn">Maafin Om cabul ini 😭😭</h4>
+            <h2 class="text-3xl font-bold mb-4 animate-fadeIn">-</h2>
+            <h4 class="text-3xl font-bold mb-4 animate-fadeIn">WALAU KEKNYA NGEBET, TAPI MAU YAA NIKAH SAMA AKU BEBB KITA WUJUDIN PLAN2 KITA 😭😘💖</h4>
+            <h4 class="text-2xl mb-4 animate-fadeIn">Iyaa rumah dulu ko ma mobil hihiih 😁😁😁</h4>
+            <h2 class="text-3xl font-bold mb-4 animate-fadeIn">-</h2>
+            <h4 class="text-2xl font-bold mb-4 animate-fadeIn">SS BEB KIRIM KE WA KALO UDAH SAMPAI SINI HIHIHIIH</h4>
+            <h4 class="text-2xl font-bold mb-4 animate-fadeIn">💕❤️💖</h4>
+        </div>
+    </div>
+
+<!-- Modal -->
+<div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-lg p-4 w-full h-full flex flex-col items-center justify-center relative">
+        <!-- Tombol Close -->
+        <button id="closeModal" class="absolute top-4 right-4 text-xl z-50">&times;</button>
+        
+        <!-- Swiper container -->
+        <div class="swiper mySwiper w-full max-w-sm">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide flex items-center justify-center">
+                    <img src="assets/p/6.jpg" class="w-full max-h-[80vh] rounded" alt="Foto 1">
+                </div>
+                <div class="swiper-slide flex items-center justify-center">
+                    <img src="assets/p/1.jpg" class="w-full max-h-[80vh] rounded" alt="Foto 2">
+                </div>
+                <div class="swiper-slide flex items-center justify-center">
+                    <img src="assets/p/2.jpg" class="w-full max-h-[80vh] rounded" alt="Foto 3">
+                </div>
+                <div class="swiper-slide flex items-center justify-center">
+                    <img src="assets/p/3.jpg" class="w-full max-h-[80vh] rounded" alt="Foto 4">
+                </div>
+                <div class="swiper-slide flex items-center justify-center">
+                    <img src="assets/p/4.jpg" class="w-full max-h-[80vh] rounded" alt="Foto 5">
+                </div>
+                <div class="swiper-slide flex items-center justify-center">
+                    <img src="assets/p/5.jpg" class="w-full max-h-[80vh] rounded" alt="Foto 6">
+                </div>
+                <div class="swiper-slide flex items-center justify-center">
+                    <img src="assets/p/7.jpg" class="w-full max-h-[80vh] rounded" alt="Foto 7">
+                </div>
+                <div class="swiper-slide flex items-center justify-center">
+                    <img src="assets/p/8.jpg" class="w-full max-h-[80vh] rounded" alt="Foto 7">
+                </div>
+                <div class="swiper-slide flex items-center justify-center">
+                    <img src="assets/p/9.jpg" class="w-full max-h-[80vh] rounded" alt="Foto 7">
+                </div>
+            </div>
+            <!-- Navigasi -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const openModal = document.getElementById("openModal");
+    const closeModal = document.getElementById("closeModal");
+    const modal = document.getElementById("modal");
+    let swiper = null;
+
+    openModal.addEventListener("click", () => {
+        modal.classList.remove("hidden");
+
+        // Inisialisasi Swiper setelah modal terbuka
+        if (!swiper) {
+            swiper = new Swiper(".mySwiper", {
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        }
+    });
+
+    closeModal.addEventListener("click", () => {
+        modal.classList.add("hidden");
+    });
+
+    // Tutup modal saat mengklik di luar modal
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            modal.classList.add("hidden");
+        }
+    });
+</script>
+
+
+<!-- Footer -->
+<div class="footer">
+    <p>Dibuat dengan ❤️ oleh Aryaadg</p>
+</div>
+</body>
+</html>
